@@ -1,0 +1,24 @@
+artifact_path: random_forest_regressor_con_out_price
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.1.1
+mlflow_version: 1.29.0
+model_uuid: b9f3bb010a9a449d8d0acda8d4d85cd5
+run_id: 026775bbe3444cf6a770c47a1cc572ed
+signature:
+  inputs: '[{"name": "Mfg_Year", "type": "double"}, {"name": "Automatic_airco", "type":
+    "long"}, {"name": "Weight", "type": "double"}, {"name": "KM", "type": "double"},
+    {"name": "CD_Player", "type": "long"}, {"name": "Airco", "type": "long"}, {"name":
+    "Powered_Windows", "type": "long"}, {"name": "HP", "type": "double"}, {"name":
+    "ABS", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-10-23 19:43:12.193541'
